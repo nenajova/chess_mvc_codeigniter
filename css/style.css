@@ -1,0 +1,333 @@
+.matches_stat
+{
+	clear: right;
+	margin-top: 50px;
+}
+.move_figure_stat
+{
+	margin-top: 20px;
+}
+.matches_stat_list, .move_figure_stat_list
+{
+    list-style: outside none none;
+    padding-left: 0;
+}
+.move_figure_stat_list li
+{
+	float: left;
+	//width: 16.66%;
+	width: 14.28%;
+	text-align: center;
+	height: 115px;
+	background-color: #f9f9f9;
+	border: 2px solid #fff;
+}
+.matches_stat_list li
+{
+	float: left;
+	width: 16.36%;
+	text-align: center;
+	height: 115px;
+	background-color: #f9f9f9;
+	border: 2px solid #fff;
+}
+
+.stat_num 
+{
+	display: block;
+	font-size: 28px;
+	margin-top: 10px;
+}
+.stat_text
+{
+	display: block;
+	margin-bottom: 5px;
+}
+.stat_glyph
+{
+	font-size: 22px;
+}
+
+
+
+
+
+.you {
+	color: green;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+#match_players, #match_other_info {
+	clear: both;
+}
+#match_move {
+//background: blue;
+margin-top:-5px;
+float: left;
+width: 25%;
+}
+#white_player, #black_player {
+	border: 1px solid black;
+	//float: left;
+	padding: 5px 10px;
+	width: 140px;
+	font-weight: bold;
+	font-size: 130%;
+}
+#white_player  {
+}
+#white_player {
+	background: white;
+	color: black;
+	float: left;
+}
+#black_player {
+	background: black;
+	color: white;
+	//align: right;
+	float: right;
+}
+#match_players {
+	width: 375px;
+}
+
+.container {
+	//width: 500px;
+}
+.move_figure {
+	float: left;
+	margin-left: 5px;
+}
+.move_nomber {
+	float: left;
+}
+
+.move_field {
+	float: left;
+	margin-left: 7px;
+}
+
+.move_row{
+	display: block;
+	background: blue;
+	width: 100%;
+	//position: relative;
+	clear: both;
+}
+
+.eat_figure {
+	float: right;
+}
+
+.w_pawn_sm, .w_rook_sm , .w_knight_sm , .w_bishop_sm , .w_queen_sm , .w_king_sm ,
+.b_pawn_sm, .b_rook_sm , .b_knight_sm , .b_bishop_sm , .b_queen_sm , .b_king_sm 
+{
+	width: 17px;
+	height: 17px;
+	//background: blue;
+
+	background-image: url("../images/chessman/chess_figures.png");
+	background-size: 100px 35px;
+}
+
+.w_pawn_sm {background-position: 16px 19px;}
+.w_rook_sm {background-position: 0px 19px;}
+.w_knight_sm {background-position: 32px 19px;}
+.w_bishop_sm {background-position: 83px 19px;}
+.w_queen_sm {background-position: 66px 19px;}
+.w_king_sm {background-position: 50px 19px;}
+
+.b_pawn_sm {background-position: 16px 0px;}
+.b_rook_sm {background-position: 0px 0px;}
+.b_knight_sm {background-position: 32px 0px;}
+.b_bishop_sm {background-position: 83px 0px;}
+.b_queen_sm {background-position: 66px 0px;}
+.b_king_sm {background-position: 50px 0px;}
+
+
+#match_moves {
+    width: 135px;
+    height: 400px;
+    overflow: auto;	
+}
+
+.field {
+	//box-sizing: border-box;
+	width: 70px;
+	height: 70px;
+	//background: blue;
+	display: inline-block;
+	border: 1px solid black;
+	//color: green;
+	margin-bottom:-5px;
+}
+
+#chess_table {
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 566px;
+	//background: silver;
+	//padding: 20px 20px;
+	
+	position: relative;
+}
+
+
+
+#chess_table .top_marks, #chess_table .bottom_marks, 
+#chess_table .left_marks, #chess_table .right_marks {
+	//background: black;
+	color: white;
+	position: absolute;
+}
+#chess_table .top_marks {
+	top: -20px;
+	left: 0px;
+	width: 100%;
+}
+#chess_table .bottom_marks {
+	bottom: -20px;
+	left: 0px;
+	width: 100%;
+}
+#chess_table .left_marks {
+	top: 0px;
+	left: -20px;
+	height: 100%;
+	width: 20px;
+}
+#chess_table .right_marks {
+	top: 0px;
+	right: -20px;
+	height: 100%;
+	width: 20px;
+}
+
+.table_mark { 
+	display: inline-block;
+	width: 67px;
+	//background: black;
+	color: white;  
+	//background: blue;
+	text-align: center;
+	//padding: 0px 0px;
+	//margin: 0px 0px;
+}
+
+.table_num { 
+	//display: inline-block;
+	//width: 67px;
+	//background: black;
+	width: 100%;
+	color: white; 
+	height: 12.5%;
+	padding-top: 25px;
+	//background: blue;
+	text-align: center;
+	//padding: 0px 0px;
+	//margin: 0px 0px;
+}
+
+#fields {
+	//margin: 10px 10px;
+	//margin-top: 20px;
+	//background: green; 
+	border: 3px double black;
+}
+
+#table_background {
+	position: absolute;
+	width: 107.1%;
+	left: -20px;
+	top: -20px;
+	height: 107.1%;
+	background: #626262;
+	z-index: -9999;
+	border-radius: 10px;
+	border: 1px solid black;
+	box-shadow: 3px 3px 10px black;
+}
+
+
+.w_pawn, .w_rook, .w_queen, .w_king, .w_knight, .w_bishop, 
+.b_pawn, .b_rook, .b_queen, .b_king, .b_knight, .b_bishop 
+{
+	width: 70px;
+	height: 70px;
+}
+/* .w_pawn { background-image: url("../images/chessman/w_pawn.gif"); }
+.w_rook { background-image: url("../images/chessman/w_rook.gif"); }
+.w_queen { background-image: url("../images/chessman/w_queen.gif"); }
+.w_king { background-image: url("../images/chessman/w_king.gif"); }
+.w_knight { background-image: url("../images/chessman/w_knight.gif"); }
+.w_bishop { background-image: url("../images/chessman/w_bishop.gif"); }
+
+.b_pawn { background-image: url("../images/chessman/b_pawn.gif"); }
+.b_rook { background-image: url("../images/chessman/b_rook.gif"); }
+.b_queen { background-image: url("../images/chessman/b_queen.gif"); }
+.b_king { background-image: url("../images/chessman/b_king.gif"); }
+.b_knight { background-image: url("../images/chessman/b_knight.gif"); }
+.b_bishop { background-image: url("../images/chessman/b_bishop.gif"); } */
+
+
+.w_pawn, .w_rook, .w_queen, .w_king, .w_knight, .w_bishop, 
+.b_pawn, .b_rook, .b_queen, .b_king, .b_knight, .b_bishop 
+{
+	background-image: url("../images/chessman/chess_figures.png");
+	background-size: 400px 140px;
+}
+.w_pawn, .w_rook, .w_queen, .w_king, .w_knight, .w_bishop
+{
+	//background-position: 0px;
+}
+.b_pawn, .b_rook, .b_queen, .b_king, .b_knight, .b_bishop 
+{
+	//background-position: 70px;
+}
+
+.w_pawn { background-position: 65px 75px; }
+.w_rook { background-position: 0px 75px; }
+.w_king { background-position: 199px 75px; }
+.w_queen { background-position: 266px 75px; }
+.w_knight { background-position: 131px 75px; }
+.w_bishop { background-position: 332px 75px; }
+
+.b_pawn { background-position: 65px 0px; }
+.b_rook { background-position: 0px 0px; }
+.b_king { background-position: 198px 0px; }
+.b_queen { background-position: 266px 0px; }
+.b_knight { background-position: 131px 0px; }
+.b_bishop { background-position: 332px 0px; }
+
+
+.field.white { background: white; }
+.field.black { //background: black; background: #9b9b9b; }
+
+.challenge_col {
+	width: 250px;
+	//display: inline-block;
+	float: left;
+	//clear: both;
+	//background: blue;
+}
+.col_title {
+	font-size: 130%;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: auto;
+}
+
+#footer {
+	clear: both;
+	margin-top: 20px;
+}
+
+#match_info, #table {
+	float: left;
+}
+#match_info {
+	margin-left: 35px;
+}
